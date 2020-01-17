@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+	Author: Dayoon Lee (301034178), Yoonseop Lee (301037418)
+	Date: March 9, 2019
+	Filename: Assignment4.html
+	-->
+	<meta charset="UTF-8">
+	<title>Assignment4</title>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id ="allPage">
+		<form action="result.html" novalidate="novalidate">
+			<fieldset id="personalInfo">
+				<legend>Personal information</legend>
+					<header>
+						<div class="logo"><a href="https://www.centennialcollege.ca/"><img src="img/images/centennial_logo.jpg" alt="centennial college logo"></a></div>
+						<h2>Centennial College</h2>
+						<h3>Admission: Apply to a world of opportunity</h3>
+					</header>
+					<h2>Apply Online</h2>
+					<p class="intro">
+					Ready to take the next step toward achieving your goals? Please fill out the application below and we will contact you about the next steps in your admissions process.
+					</p>
+					<div id="validationErrorMessage"></div>
+					<table>
+						<tr>
+							<td>
+								<p><span class="asterisk">*</span> First Name</p>
+								<input id="firstName" name="firstName" type="text" size="20" required="required">
+								<p id="fNameError"></p>
+							</td>
+							<td>
+								<label for="lastName"></label>
+								<p><span class="asterisk">*</span> Last Name</p>
+								<input id="lastName" name="lastName" type="text" size="20" required="required">
+								<p id="lNameError"></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p> Gender</p>
+								<input name="gender" type="radio" value="M">M 
+								<input name="gender" type="radio" value="F">F
+								</select>
+							</td>
+							<td>
+								<p><span class="asterisk">*</span> Street Address</p>
+								<input name="street" type="text" size="30" required="required">				
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><span class="asterisk">*</span> Country</p>
+								<select onchange="setUpCityAndProvince()" id="country" name="country" style="width: 50px" required="required">
+									<option value="US">US</option>
+									<option value="CA">CA</option>
+									<option value="CN">CN</option>
+									<option value="IN">IN</option>
+								</select>
+							</td>
+							<td>
+								<p><span class="asterisk">*</span> Postal Code</p>
+								<input id="postalCode" name="postalCode" type="text" size="10" required="required">
+								<p id="postalCodeError"></p>						
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><span class="asterisk">*</span> Password</p>
+								<input id="password" name="password" type="password" size="20" required="required">								
+							</td>
+							<td>
+								<p><span class="asterisk">*</span> Confirm Password</p>
+								<input id="passwordConfirm" name="passConfirm" type="password" size="20" required="required">
+								<p id="passwordError"></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><span class="asterisk">*</span> City</p>
+								<select id="city" name="city" style="width: 110px" required="required">
+									<option></option>									
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>									
+								</select>
+							</td>
+							<td>
+								<p><span class="asterisk">*</span> Province</p>
+								<select id="province" name="province" style="width: 50px" required="required">
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+									<option></option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><span class="asterisk">*</span> Email</p>
+								<input id="email" name="email" type="text" size="30" required="required">
+								<p id="emailError"></p>
+							</td>
+							<td>
+								<p><span class="asterisk">*</span> Phone Number</p>
+								<input id="phoneNum" name="phoneNum" type="text" size="30" required="required">
+								<p id="phoneNumError"></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p> Level of Previous Education</p>
+								<select name="education" style="width: 230px">
+									<option>High school diploma or equivalent</option>
+									<option>Post-secondary diploma</option>
+									<option>University degree</option>
+									<option>Master's degree</option>
+									<option>Other</option>
+								</select>
+							</td>
+							<td>
+								<p> Are you Currently Working?</p>
+								<input name="work" type="radio" value="Yes">Yes
+								<input name="work" type="radio" value="No">No
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><span class="asterisk">*</span> Preferred Campus</p>
+								<select name="campus" style="width: 150px" required="required">
+									<option>Ashtonbee Campus</option>
+									<option>Downsview Campus</option>
+									<option>Morningside Campus</option>
+									<option>Progress Campus</option>
+									<option>Story Arts Centre</option>
+								</select>
+							</td>
+							<td>
+								<p><span class="asterisk">*</span> Program of Interest</p>
+								<select name="interest" style="width: 400px" required="required">
+									<option>Academic, Arts and Science Preparation</option>
+									<option>Advanced Manufacturing and Systems Automation</option>
+									<option>Advertising, Marketing and Public Relations</option>
+									<option>Aerospace and Aviation</option>
+									<option>Arts, Animation and Design</option>
+									<option>Automotive and Motorcycle</option>
+									<option>Biological, Environmental and Food Sciences</option>
+									<option>Business</option>
+									<option>Community and Child Services</option>
+									<option>Emergency, Law and Court Services</option>
+									<option>Food and Tourism</option>
+									<option>Health and Wellness</option>
+									<option>Heavy Duty, Truck and Coach</option>
+									<option>Hospitality Management</option>
+									<option>Information Technology, Networking and Software Engineering</option>
+									<option>Media, Communications and Writing</option>
+									<option>Sustainable Design and Renewable Energy</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p> How Did you Hear About Us?</p>
+								<select name="medium" style="width: 100px">
+									<option>Google</option>
+									<option>Facebook</option>
+									<option>Friends</option>
+									<option>Email</option>
+									<option>Other</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+					<div class="errorMessage"></div>
+					<p class="comment"><span class="asterisk">*</span> Required fields</p>
+				</fieldset>
+				<footer>
+					<div class="button"><input class="submit" name="BtnSubmit" type="submit" value="Apply">&nbsp;</div>
+					<div class="footer">
+						<p>Any questions? Visit our website for more information!<img class="smile_icon" src="img/images/smile.png" alt="smile icon"></p>
+						<span>Web: <a href="http://www.centennialcollege.ca">www.centennialcollege.ca</a></span>&nbsp;&nbsp;
+						<span>Email: <a href="mailto:admissions@centennialcollege.ca">admissions@centennialcollege.ca</a></span>
+					</div>
+					</footer>
+				<p class="copyright">&copy;&nbsp;Copyright Dayoon Lee & Yoonseop Lee - COMP125 - Winter 2019</p>
+			</form>
+		</div>
+		<script src="js/application.js"></script>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+﻿body {
+	background-image: url("../../img/images/background.jpg");
+	background-size: 100% 100%;
+}
+#allPage {
+	border-radius: 15px;
+	width: 980px;
+	margin: 0 auto;
+	padding: 5px;
+	background-image: url("../../img/images/opacity.png");
+	font-family: verdana;
+}
+header {
+	text-align: center;
+}
+header {
+	padding-bottom: 20px;
+}
+.intro {
+	padding-bottom: 20px;
+}
+.logo {
+	height: 30px;
+}
+.logo img {
+	float: left;
+	width: 150px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+footer {
+	margin-bottom: 80px;
+	font-style: italic;
+}
+footer a:hover {
+	color: #B8BF2D;
+}
+h2 {
+	margin: 30px 0 5px 0;
+}
+h3 {
+	display: inline;
+	margin: 0;
+	padding-left: 5px;
+}
+.title {
+	margin-bottom: 16px;
+	color: 	#D0D856;
+	background-color: #4F4543;
+}
+a {
+	color: black;
+}
+.button {
+	width: 80px;
+	height: 30px;
+	margin: 30px 0 0 20px;
+}
+#submit {
+	width: 80px;
+	height: 30px;
+	padding-left: 10px;
+	font-size: 15px;
+}
+.copyright {
+	text-align: left;
+	font-size: 10px;
+	margin: 30px 0 0 0;
+}
+.smile_icon {
+	width: 20px;
+	height: 20px;
+	padding-left: 1px;
+}
+.asterisk {
+	color: red;
+	font-weight: normal;
+}
+fieldset {
+	border: none;
+	padding: 0;
+}
+legend {
+	display: none;
+}
+#validationErrorMessage {
+	text-align: center;
+	border-radius: 5px;
+	color: red;
+}
+.comment {
+	padding-left: 10px;
+	font-size: 13px;
+}
+.footer {
+	padding-top: 30px;
+	text-align: center;
+}
+table {
+	padding-left: 10px;
+}
+td {
+	width: 400px;
+}
+#fNameError, #lNameError, #passwordError, #passwordConfirmError, #emailError, #phoneNumError, #postalCodeError {
+	display: none;
+	font-size: 14px;
+	color: red;
+}

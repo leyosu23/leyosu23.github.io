@@ -1,0 +1,23 @@
+body {
+	background-image: url("../../img/images/background.jpg");
+}
+#allPage {
+    margin: 100px auto;
+    padding: 5px;
+    width: 980px;
+    height: 500px;
+    text-align: center;
+	border-radius: 15px;
+	background-image: url("../../img/images/opacity.png");
+	font-family: verdana;
+}
+.icon img
+{
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+}
+.logo img {
+    margin-top: 60px;
+    width: 150px;
+}
