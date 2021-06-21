@@ -1,0 +1,33 @@
+.column1 {
+    float: left;
+    width: 60%;
+    margin-top: auto;
+}
+
+.column2 {
+    float: left;
+    width: 40%;
+    margin-top: auto;
+}
+
+.column3 {
+    float:left;
+    margin-top: auto;
+    width: 50%;
+}
+
+.column4 {
+    float: left;
+    margin-top: auto;
+    width: 50%;
+}
+  
+.row:after {
+    display: table;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
