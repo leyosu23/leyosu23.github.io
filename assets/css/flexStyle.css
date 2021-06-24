@@ -1,33 +1,22 @@
-.column1 {
-    float: left;
-    width: 60%;
-    margin-top: auto;
-}
-
-.column2 {
-    float: left;
-    width: 40%;
-    margin-top: auto;
-}
-
-.column3 {
-    float:left;
-    margin-top: auto;
-    width: 50%;
-}
-
-.column4 {
-    float: left;
-    margin-top: auto;
-    width: 50%;
-}
-  
-.row:after {
-    display: table;
-    clear: both;
-}
-
 img {
     max-width: 100%;
-    height: auto;
   }
+
+.box-container {
+    display: flex;
+    align-items: center;
+  }
+
+ .box-1 {
+    width: 50%;
+    height: 50%;
+  }
+
+.box-2 {
+    width: 50%;
+    height: 50%;
+  }
+
+.content {
+    margin-top: 50px;
+}
