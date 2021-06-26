@@ -1,33 +1,21 @@
-.column1 {
-    float: left;
-    width: 60%;
-    margin-top: auto;
+.box-1 {
+    flex: 50%;
 }
 
-.column2 {
-    float: left;
-    width: 40%;
-    margin-top: auto;
-}
-
-.column3 {
-    float:left;
-    margin-top: auto;
-    width: 50%;
-}
-
-.column4 {
-    float: left;
-    margin-top: auto;
-    width: 50%;
+.box-2 {
+    flex: 50%;
 }
   
-.row:after {
-    display: table;
-    clear: both;
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 img {
     max-width: 100%;
-    height: auto;
-  }
+}
+
+.content {
+    margin-top: 50px;
+}
