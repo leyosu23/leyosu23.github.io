@@ -16,6 +16,10 @@ img {
     max-width: 100%;
 }
 
+.new {
+    width: 40px;
+}
+
 .content {
     margin-top: 50px;
 }
